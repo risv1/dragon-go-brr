@@ -3,11 +3,11 @@ import { useFrame } from '@react-three/fiber'
 import { useEffect } from 'react'
 import { useRef } from 'react'
 
-useGLTF.preload('../public/chinese_dragon.glb')
+useGLTF.preload('/chinese_dragon.glb')
 
 export default function Model(){
     const group = useRef(null)
-    const { animations, scene } = useGLTF('../public/chinese_dragon.glb')
+    const { animations, scene } = useGLTF('/chinese_dragon.glb')
     const { actions, clips } = useAnimations(animations, scene)
     const scroll = useScroll()
 
