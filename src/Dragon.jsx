@@ -24,7 +24,7 @@ export default function Dragon() {
         backgroundColor: "#000300",
       }}
     >
-      <PerspectiveCamera makeDefault position={[0, 500, 1400]} fov={90} />
+      <PerspectiveCamera makeDefault position={[0, 500, 1400]} fov={90} far={10000} />
       <directionalLight position={[10, 5, 5]} intensity={4} />
       <Suspense fallback={<Loader />}>
         <ScrollControls pages={10}>
